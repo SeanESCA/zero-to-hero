@@ -6,9 +6,10 @@ Dealing with algebraic expressions containing brackets is a useful skill. This s
 
 ### Single brackets
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_url("https://player.vimeo.com/video/837870527?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", height="405px")
-```
+{{< 
+    vimeo 
+    src="https://player.vimeo.com/video/837870527?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+>}}
 
 Expanding a bracket in an algebraic expression is an example of the distributive law. You probably are already familiar with that law. Here is an example of how the law could be used to work out $6 \times 15$ using a mental method.
 
@@ -51,9 +52,11 @@ $$
 
 Here are some practice questions.
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/127002/algebra-expanding-single-brackets/embed/?token=7f05cd3a-ac38-4f05-8866-e3fa3c6b280c", height="800px")
-```
+{{< 
+    numbas 
+    src="https://numbas.mathcentre.ac.uk/question/127002/algebra-expanding-single-brackets/embed/?token=7f05cd3a-ac38-4f05-8866-e3fa3c6b280c" 
+>}}
+
 
 ### Expanding pairs of brackets
 
@@ -65,9 +68,10 @@ The reverse of expanding brackets is called factorising. We look for a common fa
 
 ### Factorising - single brackets
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_url("https://player.vimeo.com/video/837883587?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", height="405px")
-```
+{{< 
+    vimeo 
+    src="https://player.vimeo.com/video/837883587?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+>}}
 
 For each term in the expression look for a common factor. We can then write this in front of the bracket so when you expand the bracket the original expression is returned. For example:
 
@@ -81,9 +85,10 @@ Notice that $3x$ is a factor of both $12x^2$ and $-15x$. Also, if we expand our 
 
 Here are some practice questions.
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/127099/algebra-factorising-single-brackets/embed/?token=29498934-17cf-45ab-96cb-ab4a6d7523ed", height="800px")
-```
+{{< 
+    numbas 
+    src="https://numbas.mathcentre.ac.uk/question/127099/algebra-factorising-single-brackets/embed/?token=29498934-17cf-45ab-96cb-ab4a6d7523ed" 
+>}}
 
 ### Factorising - pairs of brackets
 

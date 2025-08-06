@@ -6,9 +6,10 @@ On a number line negative numbers are typically written to the left of zero and 
 
 ## Multiplication and Division
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_url("https://player.vimeo.com/video/839032272?h=cc38ea685a", height="405px")
-```
+{{< 
+    vimeo
+    src="https://player.vimeo.com/video/839032272?h=cc38ea685a"
+>}}
 
 When multiplying and dividing using negative numbers the answer will be the same as the equivalent calculation with positive numbers only, but, you may have to change the sign - to either positive or negative. The rules for deciding if the answer is positive or negative are below:
 
@@ -48,9 +49,10 @@ $$
 $$.
 
 You can practice these techniques with the following questions. You can refresh the question to change the numbers. Try them as much as you like.
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/125598/negative-numbers-multiplication-and-division/embed/", height="800px")
-```
+{{< 
+    numbas
+    src="https://numbas.mathcentre.ac.uk/question/125598/negative-numbers-multiplication-and-division/embed/"
+>}}
 
 ### But why?!!?
 
@@ -92,20 +94,14 @@ Our definition fits the pattern. Horrah!
 
 ## Addition and subtraction
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_url("https://player.vimeo.com/video/839032191?h=a321a515d7", height="405px")
-```
+{{<
+    vimeo
+    src="https://player.vimeo.com/video/839032191?h=a321a515d7"
+>}}
 
 It helps to think about addition and subtraction of negative numbers on a number line. We can think about positive numbers as arrows pointing *forwards*, shifts to the right from zero, and negative numbers as arrows *backwards*, shifts to the left. Add to this the idea that addition and subtraction is then combining these arrows. When you add two numbers you place them one after another, the end of the second arrow on the tip of the first. With subtraction you reverse the direction of the second arrow and then place them together just like addition.
 
-```{r, echo=FALSE}
-par(mar = c(0.1, 0.1, 1, 0.1), fig=c(0, 1, .2, .8))  
-x <- seq(-5,5, length.out=11)
-plot(0, xlim = c(-5, 5), axes=FALSE, type = "n", xlab = "", ylab = "", main="Diagram to show 3 - 5 = -2")
-axis(1, at = x, labels = x)
-arrows(x0=0, y0=0, x1=3, y1=0)
-arrows(x0=3, y0=-0.5, x1=-2, y1=-0.5, col ="red")
-```
+![](./img/01-negative_numbers.png)
 
 Consider the following examples:
 
@@ -123,6 +119,7 @@ It's tempting to cling on to the idea that *two negatives make a positive* when 
 
 You can practice these techniques with the following questions. The numbers change each time to try them as much as you like.
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/126315/negative-numbers-addition-and-subtraction/embed/?token=1a99ce84-edc0-4467-a780-e6e9bcc6fda8", height="800px")
-```
+{{<
+    numbas
+    src="https://numbas.mathcentre.ac.uk/question/126315/negative-numbers-addition-and-subtraction/embed/?token=1a99ce84-edc0-4467-a780-e6e9bcc6fda8"
+>}}

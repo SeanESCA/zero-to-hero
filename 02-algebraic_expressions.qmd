@@ -4,9 +4,10 @@ Algebraic expressions are just statements about numbers. However, letters are us
 
 ## Substitution
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_url("https://player.vimeo.com/video/837883518?h=fa66490d88", height="405px")
-```
+{{<
+    vimeo
+    src="https://player.vimeo.com/video/837883518?h=fa66490d88"
+>}}
 
 In order to evaluate an algebraic expression we have to substitute the letters for numbers. After the numbers are written in place of the letters we must take care to evaluate the statement in the correct order. BIDMAS is often used to remember the order:
 
@@ -59,22 +60,24 @@ $$
 $$
 You can practice these techniques with the following questions. The numbers change each time to try them as much as you like.
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/126318/algebra-substitution/embed/?token=83a5d483-0d29-43d9-9569-f3b4d04ca26e", height="800px")
-```
+{{<
+    numbas
+    src="https://numbas.mathcentre.ac.uk/question/126318/algebra-substitution/embed/?token=83a5d483-0d29-43d9-9569-f3b4d04ca26e"
+>}}
 
 ## Simplification
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-#vimeo
-knitr::include_url("https://player.vimeo.com/video/839034834?h=6115cfd847", height="405px")
-```
+{{<
+    vimeo
+    src="https://player.vimeo.com/video/839034834?h=6115cfd847"
+>}}
 
 Algebraic expressions are made up of terms. Similar terms can be combined to create a simplified expression, this processes is called *collecting like terms*. For example $2a + 3a$ can be simplified to $5a$ by collecting the $a$ terms. Here's another example with a bit more going on:
 
 $$
 5x + 7y - 3x + 3y = \overbrace{5x - 3x}^{x\text{ terms}} + \overbrace{7y + 3y}^{y\text{ terms}} = 2x + 10y
 $$
+
 Notice that the like terms were grouped first to make it easier to simplify. Also, each term *owns* the positive or negative symbol ahead of it.
 
 Terms can be more complex too. Although it's tempting to find something to simplify there are no like terms in this expression: $3xy + 6x^2 + 2x - 5y$. Only the exact same multiples can be simplified. For example:
@@ -97,6 +100,7 @@ Take care when simplifying multiples of different letters $3xy + 5yx$ can be sim
 
 Have a go at simplifying with these questions.
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/104233/collect-like-terms/embed/?token=e5fdc25c-98a0-4df2-9a2f-45cc8a15b5f4", height="800px")
-```
+{{<
+    numbas
+    src="https://numbas.mathcentre.ac.uk/question/104233/collect-like-terms/embed/?token=e5fdc25c-98a0-4df2-9a2f-45cc8a15b5f4"
+>}}

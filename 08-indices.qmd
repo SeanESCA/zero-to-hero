@@ -147,9 +147,10 @@ Lots of work with fractions here!
 
 Now try these questions. Don't worry if it takes a while to just solve one!
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/64712/indices-change-of-notation-3/embed/?token=246845ab-e1ea-4745-9106-5750be81ed2c", height="800px")
-```
+{{< 
+    numbas 
+    src="https://numbas.mathcentre.ac.uk/question/64712/indices-change-of-notation-3/embed/?token=246845ab-e1ea-4745-9106-5750be81ed2c" 
+>}}
 
 ### But why? Square roots
 

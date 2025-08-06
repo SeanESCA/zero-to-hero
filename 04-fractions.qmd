@@ -1,11 +1,5 @@
 # Fractions
 
-```{r echo=FALSE}
-
-require_cancel <- if (knitr::pandoc_to("html")) {"$$\\require{cancel}$$"} else {""}
-
-```
-
 Fractions can be written in two ways:
 
 - as decimals fractions, for example $0.5$, $0.25$ and $0.\dot{3}$.
@@ -13,15 +7,16 @@ Fractions can be written in two ways:
 
 Vulgar fractions are useful in algebra. The next section looks at some techniques for dealing with them.
 
-`r require_cancel`
-
 ## Simplifying
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_url("https://player.vimeo.com/video/837882860?h=484eb8ba11", height="405px")
-```
+{{< 
+    vimeo 
+    src="https://player.vimeo.com/video/837882860?h=484eb8ba11" 
+>}}
 
 Fractions can be *cancelled down* or simplified by dividing the numerator and denominator by a common factor i.e. we look for a number that *goes into* both the top and the bottom of the fraction. For example:
+
+![](./img/desmos.gif)
 
 $$
 \begin{aligned} \frac{18}{24} &= \frac{3 \times 6}{4 \times 6} \\
@@ -51,9 +46,10 @@ $$
 
 Here are some practice questions.
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/127104/algebra-cancelling-fractions/embed/?token=17a9a4e4-a12e-4563-affd-e77faf02f68e", height="800px")
-```
+{{< 
+    numbas 
+    src="https://numbas.mathcentre.ac.uk/question/127104/algebra-cancelling-fractions/embed/?token=17a9a4e4-a12e-4563-affd-e77faf02f68e" 
+>}}
 
 :::{.callout-important}
 ## Warning!
@@ -85,9 +81,10 @@ Which is nonsense!
 
 ## Multiplication and division
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_url("https://player.vimeo.com/video/837883377?h=98ae0ce9f7", height="405px")
-```
+{{< 
+    vimeo 
+    src="https://player.vimeo.com/video/837883377?h=98ae0ce9f7" 
+>}}
 
 Multiplication and division of fractions is, thankfully, really easy!
 
@@ -133,9 +130,10 @@ $$
 
 ## Addition and subtraction
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_url("https://player.vimeo.com/video/837883283?h=da683258f7", height="405px")
-```
+{{< 
+    vimeo 
+    src="https://player.vimeo.com/video/837883283?h=da683258f7" 
+>}}
 
 Addition and subtraction is easy if the denominators are the same. We just add the numerators together and the denominators stays the same. For example:
 

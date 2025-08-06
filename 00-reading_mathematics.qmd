@@ -49,13 +49,14 @@ The table below contains common sets you may see. Each lower set contains the on
 | $\mathbb{R}$ | the real numbers | now we introduce $e$ and $\pi$, numbers with infinite and non-repeating decimal expansions |
 | $\mathbb{C}$ | the complex numbers | $\sqrt{-1}$ is now allowed, this enables any polynomial to be solved |
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_graphics("./img/types_of_numbers.jpeg")
-```
+![Each set of numbers in the table above is a subset of the set in the next row.
+The natural numbers are a subset of the integers, which are themselves a subset 
+of the rational numbers, and so on.](./img/types_of_numbers.jpeg)
 
 Practice with your knowledge of sets with these questions:
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/100368/sets-set-notation/embed/", height="800px")
-```
-
+{{< 
+    numbas
+    src="https://numbas.mathcentre.ac.uk/question/100368/sets-set-notation/embed/"
+    style="max-height: 800px; aspect-ratio: 4/5;"
+>}}

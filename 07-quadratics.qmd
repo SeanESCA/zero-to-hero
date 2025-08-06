@@ -4,17 +4,19 @@ Quadratics often appear in mathematics, they occur when you have something squar
 
 A plot of $y=x^2$ is below:
 
-```{r, echo=FALSE}
-knitr::include_url("https://www.desmos.com/calculator/ufd5zwqegu?embed")
-```
+{{< 
+    desmos 
+    src="https://www.desmos.com/calculator/ufd5zwqegu?embed" 
+>}}
 
 Quadratics can occur when we expand pairs of brackets, so I've included in this section.
 
 ## Expanding pairs of brackets
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_url("https://player.vimeo.com/video/837883155?h=32dbbf2a61", height="405px")
-```
+{{< 
+    vimeo 
+    src="https://player.vimeo.com/video/837883155?h=32dbbf2a61" 
+>}}
 
 Expanding a pair of brackets is much the same as a single bracket. However there is a little more going on. Consider this example of a mental method to calculate $25 \times 16$.
 
@@ -37,9 +39,10 @@ $$
 
 ## Factorising pairs of brackets
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_url("https://player.vimeo.com/video/837883127?h=f95af1271e", height="405px")
-```
+{{< 
+    vimeo 
+    src="https://player.vimeo.com/video/837883127?h=f95af1271e" 
+>}}
 
 To factorise a quadratic in the form $x^2 +bx +c$ into a pair of brackets like $(x+p)(x+q)$, we look to see if there are a pair of numbers $p$ and $q$ that add to get $b$ and multiply to get $c$.
 
@@ -64,9 +67,10 @@ $$
 
 Here are some practice questions. 
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/175469/ed-s-copy-of-quadratics-factorisation-1-to-be-fixe/embed/", height="800px")
-```
+{{< 
+    numbas 
+    src="https://numbas.mathcentre.ac.uk/question/175469/ed-s-copy-of-quadratics-factorisation-1-to-be-fixe/embed/" 
+>}}
 
 ## Solving Quadratics
 
@@ -80,9 +84,10 @@ Here are some methods to solve quadratic equations.
 
 ### Factorisation
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_url("https://player.vimeo.com/video/837882902?h=4e3076aaa0", height="405px")
-```
+{{< 
+    vimeo 
+    src="https://player.vimeo.com/video/837882902?h=4e3076aaa0" 
+>}}
 
 We can solve some quadratics by factorisation. Take for example the following equation $x^2 + 8x = -12$. To solve via factorisation we must first make it equal to zero and then factorise. So we have:
 
@@ -103,15 +108,17 @@ We can quickly get from the factorised quadratic to the solutions by *flipping* 
 
 Try some questions. 
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/105345/quadratics-solving-by-factorisation/embed/?token=84458480-2b4c-4902-9920-c43792afedcd", height="800px")
-```
+{{< 
+    numbas 
+    src="https://numbas.mathcentre.ac.uk/question/105345/quadratics-solving-by-factorisation/embed/?token=84458480-2b4c-4902-9920-c43792afedcd" 
+>}}
 
 ### Quadratic Formula
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_url("https://player.vimeo.com/video/837883075?h=f7f2137541", height="405px")
-```
+{{< 
+    vimeo 
+    src="https://player.vimeo.com/video/837883075?h=f7f2137541" 
+>}}
 
 For a quadratic equation of the form $ax^2 + bx + c = 0$ we can use the quadratic formula to find solutions for $x$.
 
@@ -158,15 +165,17 @@ Notice the use of $x_1$ and $x_2$. It is common in maths to use subscript number
 
 :::
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/64345/quadratics-using-the-quadratic-formula/embed/?token=df746faf-a094-4dd6-8e2b-19ae44306fc8", height="800px")
-```
+{{< 
+    numbas 
+    src="https://numbas.mathcentre.ac.uk/question/64345/quadratics-using-the-quadratic-formula/embed/?token=df746faf-a094-4dd6-8e2b-19ae44306fc8" 
+>}}
 
 ## Simultaneous equations
 
-```{r, echo=FALSE, eval=(knitr::pandoc_to("html"))}
-knitr::include_url("https://player.vimeo.com/video/837882931?h=db96c56d1f", height="405px")
-```
+{{< 
+    vimeo 
+    src="https://player.vimeo.com/video/837882931?h=db96c56d1f" 
+>}}
 
 We are going to solve this type of equation by substitution i.e. substituting one equation into another.
 
@@ -220,6 +229,7 @@ notice our answers look a lot like co-ordinates on a graph. That's because they 
 
 Here are some practice questions. Don't forget you can graph them if it helps.
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/65155/simultaneous-equations-quadratics-1/embed/?token=582d176f-c880-4353-abdf-8f51e0c575b6", height="800px")
-```
+{{< 
+    numbas 
+    src="https://numbas.mathcentre.ac.uk/question/65155/simultaneous-equations-quadratics-1/embed/?token=582d176f-c880-4353-abdf-8f51e0c575b6" 
+>}}

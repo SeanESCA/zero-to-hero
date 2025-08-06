@@ -74,9 +74,11 @@ $$
 
 Now try some questions for yourself.
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/175769/partial-differentiation-1/embed/?token=cc7bd675-94c9-4ae3-a096-3a7a30ee0219", height="600px")
-```
+{{< 
+    numbas
+    src="https://numbas.mathcentre.ac.uk/question/175769/partial-differentiation-1/embed/?token=cc7bd675-94c9-4ae3-a096-3a7a30ee0219"
+    style="max-height: 600px;"
+>}}
 
 
 ### Determinants of matrices
@@ -155,12 +157,10 @@ $$
 
 #### Have a go
 
-```{r, echo=FALSE}
-knitr::include_url("https://numbas.mathcentre.ac.uk/question/175721/determinant-of-a-2x2-matrix/embed/", height="800px")
-```
-
-
-
+{{< 
+    numbas
+    src="https://numbas.mathcentre.ac.uk/question/175721/determinant-of-a-2x2-matrix/embed/"
+>}}
 
 #### Determinant of 3x3 matrix
 

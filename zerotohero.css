@@ -1,0 +1,21 @@
+.vimeo-iframe {
+    max-width: 672px;
+    max-height:405px; 
+    aspect-ratio: 8/5;
+}
+
+.numbas-iframe {
+    max-width: 672px;
+    max-height: 800px; 
+    aspect-ratio: 21/25;
+
+    &.short-numbas-iframe {
+        max-height: 340px;
+    }
+}
+
+.desmos-iframe {
+    max-width: 672px;
+    max-height: 500px;
+    aspect-ratio: 7/5;
+}
