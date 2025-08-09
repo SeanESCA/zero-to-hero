@@ -1,19 +1,19 @@
-project:
+output-file: _cs
+metadata:
   title: "Zero to Hero: CS"
-  output-dir: _cs
+  profile: cs
 
-book:
-  chapters:
-    - index.qmd
-    - 01-negative_numbers.qmd
-    - 02-algebraic_expressions.qmd
-    - 03-expressions_with_brackets.qmd
-    - 04-fractions.qmd
-    - 05-solving_equations.qmd
-    - 00-reading_mathematics.qmd
-    - 06-straight_line_graphs.qmd
-    - 07-quadratics.qmd
-    - 08-indices.qmd
+input-files:
+- index.qmd
+- 01-negative_numbers.qmd
+- 02-algebraic_expressions.qmd
+- 03-expressions_with_brackets.qmd
+- 04-fractions.qmd
+- 05-solving_equations.qmd
+- 00-reading_mathematics.qmd
+- 06-straight_line_graphs.qmd
+- 07-quadratics.qmd
+- 08-indices.qmd
 #    - 09-differentiation.qmd
 #    - 10-exponetial_function.qmd
 #    - 11-logarithms.qmd
