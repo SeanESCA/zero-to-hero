@@ -213,4 +213,4 @@ You can try other examples in the exercise below. Sometime you may have to multi
 
 ### Substitution method
 
-It is also possible to re-arrange one equation and substitute it into the other. This method will be covered in the [Quadratics](#07-quadratics.qmd) section.
+It is also possible to re-arrange one equation and substitute it into the other. This method will be covered in the [Quadratics] section.

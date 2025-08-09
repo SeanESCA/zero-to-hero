@@ -1,0 +1,5 @@
+# to: pdf
+include-in-header: preamble.tex
+metadata:
+  documentclass: scrbook
+  papersize: a4

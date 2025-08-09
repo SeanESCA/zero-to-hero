@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Ed Southwood" />
+  <title>Reading mathematics</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="./../src/css/base.css" />
+  <link rel="stylesheet" href="./../src/css/callout.css" />
+  <link rel="stylesheet" href="./../src/css/spss_light.css" />
+  <link rel="stylesheet" href="./../src/css/screen.css" />
+  <link rel="stylesheet" href="./../src/css/print.css" />
+  <link rel="stylesheet" href="zerotohero.css" />
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: {extensions: ["cancel.js"]},
+        tex2jax: {
+          inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+          processEscapes: true
+        }
+      });
+  </script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="index.html" accesskey="u" rel="up">Zero to Hero</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Zero to Hero</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="7-straight-line-graphs.html" accesskey="n" rel="next">Straight line graphs</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="5-solving-equations.html" accesskey="p" rel="previous">Solving equations</a>
+</span>
+</div>
+</nav>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="-welcome.html#welcome" id="toc-welcome">Welcome</a></li>
+<li><a href="1-negative-numbers.html#negative-numbers"
+id="toc-negative-numbers"><span class="toc-section-number">1</span>
+Negative numbers</a>
+<ul>
+<li><a href="1-negative-numbers.html#multiplication-and-division"
+id="toc-multiplication-and-division"><span
+class="toc-section-number">1.1</span> Multiplication and
+Division</a></li>
+<li><a href="1-negative-numbers.html#addition-and-subtraction"
+id="toc-addition-and-subtraction"><span
+class="toc-section-number">1.2</span> Addition and subtraction</a></li>
+</ul></li>
+<li><a href="2-algebraic-expressions.html#algebraic-expressions"
+id="toc-algebraic-expressions"><span class="toc-section-number">2</span>
+Algebraic expressions</a>
+<ul>
+<li><a href="2-algebraic-expressions.html#substitution"
+id="toc-substitution"><span class="toc-section-number">2.1</span>
+Substitution</a></li>
+<li><a href="2-algebraic-expressions.html#simplification"
+id="toc-simplification"><span class="toc-section-number">2.2</span>
+Simplification</a></li>
+</ul></li>
+<li><a href="3-expressions-with-brackets.html#expressions-with-brackets"
+id="toc-expressions-with-brackets"><span
+class="toc-section-number">3</span> Expressions with brackets</a>
+<ul>
+<li><a href="3-expressions-with-brackets.html#expanding"
+id="toc-expanding"><span class="toc-section-number">3.1</span>
+Expanding</a></li>
+<li><a href="3-expressions-with-brackets.html#factorising"
+id="toc-factorising"><span class="toc-section-number">3.2</span>
+Factorising</a></li>
+</ul></li>
+<li><a href="4-fractions.html#fractions" id="toc-fractions"><span
+class="toc-section-number">4</span> Fractions</a>
+<ul>
+<li><a href="4-fractions.html#simplifying" id="toc-simplifying"><span
+class="toc-section-number">4.1</span> Simplifying</a></li>
+<li><a href="4-fractions.html#multiplication-and-division-1"
+id="toc-multiplication-and-division-1"><span
+class="toc-section-number">4.2</span> Multiplication and
+division</a></li>
+<li><a href="4-fractions.html#addition-and-subtraction-1"
+id="toc-addition-and-subtraction-1"><span
+class="toc-section-number">4.3</span> Addition and subtraction</a></li>
+</ul></li>
+<li><a href="5-solving-equations.html#solving-equations"
+id="toc-solving-equations"><span class="toc-section-number">5</span>
+Solving equations</a>
+<ul>
+<li><a href="5-solving-equations.html#linear-equations"
+id="toc-linear-equations"><span class="toc-section-number">5.1</span>
+Linear equations</a></li>
+<li><a href="5-solving-equations.html#inequalities"
+id="toc-inequalities"><span class="toc-section-number">5.2</span>
+Inequalities</a></li>
+<li><a href="5-solving-equations.html#simultaneous-equations"
+id="toc-simultaneous-equations"><span
+class="toc-section-number">5.3</span> Simultaneous equations</a></li>
+</ul></li>
+<li><a href="6-reading-mathematics.html#reading-mathematics"
+id="toc-reading-mathematics"><span class="toc-section-number">6</span>
+Reading mathematics</a>
+<ul>
+<li><a href="6-reading-mathematics.html#common-symbols"
+id="toc-common-symbols"><span class="toc-section-number">6.1</span>
+Common symbols</a></li>
+<li><a href="6-reading-mathematics.html#sets" id="toc-sets"><span
+class="toc-section-number">6.2</span> Sets</a></li>
+</ul></li>
+<li><a href="7-straight-line-graphs.html#straight-line-graphs"
+id="toc-straight-line-graphs"><span class="toc-section-number">7</span>
+Straight line graphs</a>
+<ul>
+<li><a href="7-straight-line-graphs.html#coordinates"
+id="toc-coordinates"><span class="toc-section-number">7.1</span>
+Coordinates</a></li>
+<li><a
+href="7-straight-line-graphs.html#the-formula-for-a-straight-line-graph-ymxc"
+id="toc-the-formula-for-a-straight-line-graph-ymxc"><span
+class="toc-section-number">7.2</span> The formula for a straight line
+graph: <span class="math inline">\(y=mx+c\)</span></a></li>
+</ul></li>
+<li><a href="8-quadratics.html#quadratics" id="toc-quadratics"><span
+class="toc-section-number">8</span> Quadratics</a>
+<ul>
+<li><a href="8-quadratics.html#expanding-pairs-of-brackets-1"
+id="toc-expanding-pairs-of-brackets-1"><span
+class="toc-section-number">8.1</span> Expanding pairs of
+brackets</a></li>
+<li><a href="8-quadratics.html#factorising-pairs-of-brackets"
+id="toc-factorising-pairs-of-brackets"><span
+class="toc-section-number">8.2</span> Factorising pairs of
+brackets</a></li>
+<li><a href="8-quadratics.html#solving-quadratics"
+id="toc-solving-quadratics"><span class="toc-section-number">8.3</span>
+Solving Quadratics</a></li>
+<li><a href="8-quadratics.html#simultaneous-equations-1"
+id="toc-simultaneous-equations-1"><span
+class="toc-section-number">8.4</span> Simultaneous equations</a></li>
+</ul></li>
+<li><a href="9-indices.html#indices" id="toc-indices"><span
+class="toc-section-number">9</span> Indices</a>
+<ul>
+<li><a href="9-indices.html#index-notation"
+id="toc-index-notation"><span class="toc-section-number">9.1</span>
+Index notation</a></li>
+<li><a href="9-indices.html#rules-of-indices"
+id="toc-rules-of-indices"><span class="toc-section-number">9.2</span>
+Rules of indices</a></li>
+</ul></li>
+<li><a href="10-differentiation.html#differentiation"
+id="toc-differentiation"><span class="toc-section-number">10</span>
+Differentiation</a>
+<ul>
+<li><a href="10-differentiation.html#the-tangent-to-a-curve"
+id="toc-the-tangent-to-a-curve"><span
+class="toc-section-number">10.1</span> The tangent to a curve</a></li>
+<li><a href="10-differentiation.html#the-rules-of-differentiation"
+id="toc-the-rules-of-differentiation"><span
+class="toc-section-number">10.2</span> The rules of
+differentiation</a></li>
+<li><a href="10-differentiation.html#finding-gradient-at-a-point"
+id="toc-finding-gradient-at-a-point"><span
+class="toc-section-number">10.3</span> Finding gradient at a
+point</a></li>
+</ul></li>
+<li><a href="11-exponential-functions.html#exponential-functions"
+id="toc-exponential-functions"><span
+class="toc-section-number">11</span> Exponential functions</a>
+<ul>
+<li><a
+href="11-exponential-functions.html#getting-to-know-exponential-functions"
+id="toc-getting-to-know-exponential-functions"><span
+class="toc-section-number">11.1</span> Getting to know exponential
+functions</a></li>
+<li><a href="11-exponential-functions.html#the-exponential-function"
+id="toc-the-exponential-function"><span
+class="toc-section-number">11.2</span> The exponential function</a></li>
+<li><a href="11-exponential-functions.html#differentiating-ex"
+id="toc-differentiating-ex"><span class="toc-section-number">11.3</span>
+Differentiating <span class="math inline">\(e^x\)</span></a></li>
+</ul></li>
+<li><a href="12-logarithms.html#logarithms" id="toc-logarithms"><span
+class="toc-section-number">12</span> Logarithms</a>
+<ul>
+<li><a href="12-logarithms.html#reverse-of-indices"
+id="toc-reverse-of-indices"><span class="toc-section-number">12.1</span>
+Reverse of indices</a></li>
+<li><a href="12-logarithms.html#rules-of-logarithms"
+id="toc-rules-of-logarithms"><span
+class="toc-section-number">12.2</span> Rules of logarithms</a></li>
+<li><a href="12-logarithms.html#solving-equations-with-logarithms-in"
+id="toc-solving-equations-with-logarithms-in"><span
+class="toc-section-number">12.3</span> Solving equations with logarithms
+in</a></li>
+<li><a href="12-logarithms.html#some-important-bases"
+id="toc-some-important-bases"><span
+class="toc-section-number">12.4</span> Some important bases</a></li>
+<li><a href="12-logarithms.html#differentiating-lnx"
+id="toc-differentiating-lnx"><span
+class="toc-section-number">12.5</span> Differentiating <span
+class="math inline">\(\ln{x}\)</span></a></li>
+</ul></li>
+<li><a href="13-further-differentiation.html#further-differentiation"
+id="toc-further-differentiation"><span
+class="toc-section-number">13</span> Further differentiation</a>
+<ul>
+<li><a href="13-further-differentiation.html#standard-results"
+id="toc-standard-results"><span class="toc-section-number">13.1</span>
+Standard results</a></li>
+<li><a href="13-further-differentiation.html#the-chain-rule"
+id="toc-the-chain-rule"><span class="toc-section-number">13.2</span> The
+chain rule</a></li>
+<li><a href="13-further-differentiation.html#the-product-rule"
+id="toc-the-product-rule"><span class="toc-section-number">13.3</span>
+The product rule</a></li>
+<li><a href="13-further-differentiation.html#the-quotient-rule"
+id="toc-the-quotient-rule"><span class="toc-section-number">13.4</span>
+The quotient rule</a></li>
+</ul></li>
+<li><a href="14-optimisation.html#optimisation"
+id="toc-optimisation"><span class="toc-section-number">14</span>
+Optimisation</a>
+<ul>
+<li><a href="14-optimisation.html#the-process-of-optimisation"
+id="toc-the-process-of-optimisation"><span
+class="toc-section-number">14.1</span> The process of
+optimisation</a></li>
+<li><a
+href="14-optimisation.html#classifying-turning-points---critical-points"
+id="toc-classifying-turning-points---critical-points"><span
+class="toc-section-number">14.2</span> Classifying turning points -
+critical points</a></li>
+<li><a
+href="14-optimisation.html#example---finding-and-classifying-critical-points"
+id="toc-example---finding-and-classifying-critical-points"><span
+class="toc-section-number">14.3</span> Example - finding and classifying
+critical points</a></li>
+<li><a href="14-optimisation.html#solving-optomisation-problems."
+id="toc-solving-optomisation-problems."><span
+class="toc-section-number">14.4</span> Solving optomisation
+problems.</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 data-number="6" id="reading-mathematics"><span
+class="header-section-number">6</span> Reading mathematics</h1>
+<p>This section looks at common notation used when writing mathematics
+using formal notation - read it now or come back to it once you’ve done
+a bit of <em>real maths</em>. You could even use it as a glossary, come
+back to it and look stuff up if you need to.</p>
+<p>Sometimes looking at a piece of mathematics can feel like looking at
+another language. If you feel that way don’t worry, that’s normal. It’s
+worth remembering these things:</p>
+<ul>
+<li><strong>Written mathematics is dense.</strong> A lot of concepts can
+be expressed with very few symbols. Don’t worry if it takes you a while
+to understand what they mean - that’s totally normal. It’s also a good
+idea to get a pen and paper out and <em>play</em> with the concepts
+being expressed.</li>
+<li><strong>Understanding notation takes time.</strong> At first it can
+seem unnecessary and needlessly complicated to introduce new symbols.
+However, once you’ve mastered using these symbols you will gain a new
+perspective on the concepts your studying.</li>
+<li><strong>Practice helps.</strong> Maths is an active subject, take
+the time to do some questions. Don’t be content to read the notes and
+watch the videos. It’s also worth trying to work through examples in
+your lecture notes alone, even if you’ve seen the answer before, getting
+to it yourself will be good practice.</li>
+</ul>
+<h2 data-number="6.1" id="common-symbols"><span
+class="header-section-number">6.1</span> Common symbols</h2>
+<p>These symbols can turn up in mathematical explanations.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">symbol</th>
+<th style="text-align: center;">meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\therefore\)</span></td>
+<td style="text-align: center;">therefore</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\because\)</span></td>
+<td style="text-align: center;">because</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\neq\)</span></td>
+<td style="text-align: center;">not equal</td>
+</tr>
+</tbody>
+</table>
+<h2 data-number="6.2" id="sets"><span
+class="header-section-number">6.2</span> Sets</h2>
+<p>A set is a collection of elements (things). Sets are defined using
+<em>curly brackets</em> or braces <span
+class="math inline">\(\{\)</span> and <span
+class="math inline">\(\}\)</span>. Capital letters are often used as
+names of sets. Here is the set of the first <span
+class="math inline">\(5\)</span> multiples of <span
+class="math inline">\(3\)</span> (the first <span
+class="math inline">\(5\)</span> numbers in the <span
+class="math inline">\(3\)</span> times table):</p>
+<p><span class="math display">\[A = \{3,6,9,12,15\}\]</span></p>
+<p>When sets are small it’s ok just to write down all the elements of
+the set. However if I wanted to write down all of the multiples of <span
+class="math inline">\(3\)</span> I would be in trouble. This is when we
+use <strong>set builder</strong> notation and some new symbols.</p>
+<p><span class="math display">\[B = \{ 3x | x \in \mathbb{N} \}\]</span>
+This is read as: <em><span class="math inline">\(B\)</span> is the set
+of <span class="math inline">\(3\)</span> times <span
+class="math inline">\(x\)</span> such that <span
+class="math inline">\(x\)</span> is a natural number.</em> We’ve added
+in a funny E, N and a line! Here’s what they mean:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">symbol</th>
+<th style="text-align: center;">meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\in\)</span></td>
+<td style="text-align: center;">is a member of the set</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(|\)</span></td>
+<td style="text-align: center;">such that</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\mathbb{N}\)</span></td>
+<td style="text-align: center;">the natural numbers <span
+class="math inline">\(1,2,3,4...\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>When reading this for the first time it is fine to try some values
+for <span class="math inline">\(x\)</span> and see what you get. Explore
+the idea with pen and paper.</p>
+<h3 data-number="6.2.1" id="common-sets-of-numbers"><span
+class="header-section-number">6.2.1</span> Common sets of numbers</h3>
+<p>The table below contains common sets you may see. Each lower set
+contains the one above, i.e. the whole of <span
+class="math inline">\(\mathbb{N}\)</span> is in <span
+class="math inline">\(\mathbb{Z}\)</span>.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">symbol</th>
+<th style="text-align: center;">name</th>
+<th style="text-align: center;">example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\mathbb{N}\)</span></td>
+<td style="text-align: center;">the natural numbers</td>
+<td style="text-align: center;">positive whole numbers <span
+class="math inline">\(1,2,3,4...\)</span>, this sometimes includes
+zero</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\mathbb{Z}\)</span></td>
+<td style="text-align: center;">the integers</td>
+<td style="text-align: center;">positive and negative whole numbers
+<span class="math inline">\(..., -2, -1, 0, 1,2,...\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\mathbb{Q}\)</span></td>
+<td style="text-align: center;">the rational numbers</td>
+<td style="text-align: center;">including fractions <span
+class="math inline">\(-\frac{1}{2}, 0, \frac{1}{2},1,...\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\mathbb{R}\)</span></td>
+<td style="text-align: center;">the real numbers</td>
+<td style="text-align: center;">now we introduce <span
+class="math inline">\(e\)</span> and <span
+class="math inline">\(\pi\)</span>, numbers with infinite and
+non-repeating decimal expansions</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(\mathbb{C}\)</span></td>
+<td style="text-align: center;">the complex numbers</td>
+<td style="text-align: center;"><span
+class="math inline">\(\sqrt{-1}\)</span> is now allowed, this enables
+any polynomial to be solved</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="./img/types_of_numbers.jpeg"
+alt="Each set of numbers in the table above is a subset of the set in the next row. The natural numbers are a subset of the integers, which are themselves a subset of the rational numbers, and so on." />
+<figcaption aria-hidden="true">Each set of numbers in the table above is
+a subset of the set in the next row. The natural numbers are a subset of
+the integers, which are themselves a subset of the rational numbers, and
+so on.</figcaption>
+</figure>
+<div class="before-iframe-container before-numbas-container">
+<img
+src="data:image/jpeg;base64,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" />
+
+Practice
+
+with
+
+your
+
+knowledge
+
+of
+
+sets
+
+with
+
+these
+
+questions:
+</div>
+<iframe src="https://numbas.mathcentre.ac.uk/question/100368/sets-set-notation/embed/" style="max-height: 800px; aspect-ratio: 4/5;" class="numbas-iframe"></iframe>
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "45c34618a8294826b85725434b26e3db"}'></script>
+<!-- End Cloudflare Web Analytics -->
+<script type="application/javascript" src="scripts/light-dark.js"></script>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Ed Southwood" />
+  <title>Fractions</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="./../src/css/base.css" />
+  <link rel="stylesheet" href="./../src/css/callout.css" />
+  <link rel="stylesheet" href="./../src/css/spss_light.css" />
+  <link rel="stylesheet" href="./../src/css/screen.css" />
+  <link rel="stylesheet" href="./../src/css/print.css" />
+  <link rel="stylesheet" href="zerotohero.css" />
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: {extensions: ["cancel.js"]},
+        tex2jax: {
+          inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+          processEscapes: true
+        }
+      });
+  </script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="index.html" accesskey="u" rel="up">Zero to Hero</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Zero to Hero</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="5-solving-equations.html" accesskey="n" rel="next">Solving equations</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="3-expressions-with-brackets.html" accesskey="p" rel="previous">Expressions with brackets</a>
+</span>
+</div>
+</nav>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="-welcome.html#welcome" id="toc-welcome">Welcome</a></li>
+<li><a href="1-negative-numbers.html#negative-numbers"
+id="toc-negative-numbers"><span class="toc-section-number">1</span>
+Negative numbers</a>
+<ul>
+<li><a href="1-negative-numbers.html#multiplication-and-division"
+id="toc-multiplication-and-division"><span
+class="toc-section-number">1.1</span> Multiplication and
+Division</a></li>
+<li><a href="1-negative-numbers.html#addition-and-subtraction"
+id="toc-addition-and-subtraction"><span
+class="toc-section-number">1.2</span> Addition and subtraction</a></li>
+</ul></li>
+<li><a href="2-algebraic-expressions.html#algebraic-expressions"
+id="toc-algebraic-expressions"><span class="toc-section-number">2</span>
+Algebraic expressions</a>
+<ul>
+<li><a href="2-algebraic-expressions.html#substitution"
+id="toc-substitution"><span class="toc-section-number">2.1</span>
+Substitution</a></li>
+<li><a href="2-algebraic-expressions.html#simplification"
+id="toc-simplification"><span class="toc-section-number">2.2</span>
+Simplification</a></li>
+</ul></li>
+<li><a href="3-expressions-with-brackets.html#expressions-with-brackets"
+id="toc-expressions-with-brackets"><span
+class="toc-section-number">3</span> Expressions with brackets</a>
+<ul>
+<li><a href="3-expressions-with-brackets.html#expanding"
+id="toc-expanding"><span class="toc-section-number">3.1</span>
+Expanding</a></li>
+<li><a href="3-expressions-with-brackets.html#factorising"
+id="toc-factorising"><span class="toc-section-number">3.2</span>
+Factorising</a></li>
+</ul></li>
+<li><a href="4-fractions.html#fractions" id="toc-fractions"><span
+class="toc-section-number">4</span> Fractions</a>
+<ul>
+<li><a href="4-fractions.html#simplifying" id="toc-simplifying"><span
+class="toc-section-number">4.1</span> Simplifying</a></li>
+<li><a href="4-fractions.html#multiplication-and-division-1"
+id="toc-multiplication-and-division-1"><span
+class="toc-section-number">4.2</span> Multiplication and
+division</a></li>
+<li><a href="4-fractions.html#addition-and-subtraction-1"
+id="toc-addition-and-subtraction-1"><span
+class="toc-section-number">4.3</span> Addition and subtraction</a></li>
+</ul></li>
+<li><a href="5-solving-equations.html#solving-equations"
+id="toc-solving-equations"><span class="toc-section-number">5</span>
+Solving equations</a>
+<ul>
+<li><a href="5-solving-equations.html#linear-equations"
+id="toc-linear-equations"><span class="toc-section-number">5.1</span>
+Linear equations</a></li>
+<li><a href="5-solving-equations.html#inequalities"
+id="toc-inequalities"><span class="toc-section-number">5.2</span>
+Inequalities</a></li>
+<li><a href="5-solving-equations.html#simultaneous-equations"
+id="toc-simultaneous-equations"><span
+class="toc-section-number">5.3</span> Simultaneous equations</a></li>
+</ul></li>
+<li><a href="6-reading-mathematics.html#reading-mathematics"
+id="toc-reading-mathematics"><span class="toc-section-number">6</span>
+Reading mathematics</a>
+<ul>
+<li><a href="6-reading-mathematics.html#common-symbols"
+id="toc-common-symbols"><span class="toc-section-number">6.1</span>
+Common symbols</a></li>
+<li><a href="6-reading-mathematics.html#sets" id="toc-sets"><span
+class="toc-section-number">6.2</span> Sets</a></li>
+</ul></li>
+<li><a href="7-straight-line-graphs.html#straight-line-graphs"
+id="toc-straight-line-graphs"><span class="toc-section-number">7</span>
+Straight line graphs</a>
+<ul>
+<li><a href="7-straight-line-graphs.html#coordinates"
+id="toc-coordinates"><span class="toc-section-number">7.1</span>
+Coordinates</a></li>
+<li><a
+href="7-straight-line-graphs.html#the-formula-for-a-straight-line-graph-ymxc"
+id="toc-the-formula-for-a-straight-line-graph-ymxc"><span
+class="toc-section-number">7.2</span> The formula for a straight line
+graph: <span class="math inline">\(y=mx+c\)</span></a></li>
+</ul></li>
+<li><a href="8-quadratics.html#quadratics" id="toc-quadratics"><span
+class="toc-section-number">8</span> Quadratics</a>
+<ul>
+<li><a href="8-quadratics.html#expanding-pairs-of-brackets-1"
+id="toc-expanding-pairs-of-brackets-1"><span
+class="toc-section-number">8.1</span> Expanding pairs of
+brackets</a></li>
+<li><a href="8-quadratics.html#factorising-pairs-of-brackets"
+id="toc-factorising-pairs-of-brackets"><span
+class="toc-section-number">8.2</span> Factorising pairs of
+brackets</a></li>
+<li><a href="8-quadratics.html#solving-quadratics"
+id="toc-solving-quadratics"><span class="toc-section-number">8.3</span>
+Solving Quadratics</a></li>
+<li><a href="8-quadratics.html#simultaneous-equations-1"
+id="toc-simultaneous-equations-1"><span
+class="toc-section-number">8.4</span> Simultaneous equations</a></li>
+</ul></li>
+<li><a href="9-indices.html#indices" id="toc-indices"><span
+class="toc-section-number">9</span> Indices</a>
+<ul>
+<li><a href="9-indices.html#index-notation"
+id="toc-index-notation"><span class="toc-section-number">9.1</span>
+Index notation</a></li>
+<li><a href="9-indices.html#rules-of-indices"
+id="toc-rules-of-indices"><span class="toc-section-number">9.2</span>
+Rules of indices</a></li>
+</ul></li>
+<li><a href="10-differentiation.html#differentiation"
+id="toc-differentiation"><span class="toc-section-number">10</span>
+Differentiation</a>
+<ul>
+<li><a href="10-differentiation.html#the-tangent-to-a-curve"
+id="toc-the-tangent-to-a-curve"><span
+class="toc-section-number">10.1</span> The tangent to a curve</a></li>
+<li><a href="10-differentiation.html#the-rules-of-differentiation"
+id="toc-the-rules-of-differentiation"><span
+class="toc-section-number">10.2</span> The rules of
+differentiation</a></li>
+<li><a href="10-differentiation.html#finding-gradient-at-a-point"
+id="toc-finding-gradient-at-a-point"><span
+class="toc-section-number">10.3</span> Finding gradient at a
+point</a></li>
+</ul></li>
+<li><a href="11-exponential-functions.html#exponential-functions"
+id="toc-exponential-functions"><span
+class="toc-section-number">11</span> Exponential functions</a>
+<ul>
+<li><a
+href="11-exponential-functions.html#getting-to-know-exponential-functions"
+id="toc-getting-to-know-exponential-functions"><span
+class="toc-section-number">11.1</span> Getting to know exponential
+functions</a></li>
+<li><a href="11-exponential-functions.html#the-exponential-function"
+id="toc-the-exponential-function"><span
+class="toc-section-number">11.2</span> The exponential function</a></li>
+<li><a href="11-exponential-functions.html#differentiating-ex"
+id="toc-differentiating-ex"><span class="toc-section-number">11.3</span>
+Differentiating <span class="math inline">\(e^x\)</span></a></li>
+</ul></li>
+<li><a href="12-logarithms.html#logarithms" id="toc-logarithms"><span
+class="toc-section-number">12</span> Logarithms</a>
+<ul>
+<li><a href="12-logarithms.html#reverse-of-indices"
+id="toc-reverse-of-indices"><span class="toc-section-number">12.1</span>
+Reverse of indices</a></li>
+<li><a href="12-logarithms.html#rules-of-logarithms"
+id="toc-rules-of-logarithms"><span
+class="toc-section-number">12.2</span> Rules of logarithms</a></li>
+<li><a href="12-logarithms.html#solving-equations-with-logarithms-in"
+id="toc-solving-equations-with-logarithms-in"><span
+class="toc-section-number">12.3</span> Solving equations with logarithms
+in</a></li>
+<li><a href="12-logarithms.html#some-important-bases"
+id="toc-some-important-bases"><span
+class="toc-section-number">12.4</span> Some important bases</a></li>
+<li><a href="12-logarithms.html#differentiating-lnx"
+id="toc-differentiating-lnx"><span
+class="toc-section-number">12.5</span> Differentiating <span
+class="math inline">\(\ln{x}\)</span></a></li>
+</ul></li>
+<li><a href="13-further-differentiation.html#further-differentiation"
+id="toc-further-differentiation"><span
+class="toc-section-number">13</span> Further differentiation</a>
+<ul>
+<li><a href="13-further-differentiation.html#standard-results"
+id="toc-standard-results"><span class="toc-section-number">13.1</span>
+Standard results</a></li>
+<li><a href="13-further-differentiation.html#the-chain-rule"
+id="toc-the-chain-rule"><span class="toc-section-number">13.2</span> The
+chain rule</a></li>
+<li><a href="13-further-differentiation.html#the-product-rule"
+id="toc-the-product-rule"><span class="toc-section-number">13.3</span>
+The product rule</a></li>
+<li><a href="13-further-differentiation.html#the-quotient-rule"
+id="toc-the-quotient-rule"><span class="toc-section-number">13.4</span>
+The quotient rule</a></li>
+</ul></li>
+<li><a href="14-optimisation.html#optimisation"
+id="toc-optimisation"><span class="toc-section-number">14</span>
+Optimisation</a>
+<ul>
+<li><a href="14-optimisation.html#the-process-of-optimisation"
+id="toc-the-process-of-optimisation"><span
+class="toc-section-number">14.1</span> The process of
+optimisation</a></li>
+<li><a
+href="14-optimisation.html#classifying-turning-points---critical-points"
+id="toc-classifying-turning-points---critical-points"><span
+class="toc-section-number">14.2</span> Classifying turning points -
+critical points</a></li>
+<li><a
+href="14-optimisation.html#example---finding-and-classifying-critical-points"
+id="toc-example---finding-and-classifying-critical-points"><span
+class="toc-section-number">14.3</span> Example - finding and classifying
+critical points</a></li>
+<li><a href="14-optimisation.html#solving-optomisation-problems."
+id="toc-solving-optomisation-problems."><span
+class="toc-section-number">14.4</span> Solving optomisation
+problems.</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 data-number="4" id="fractions"><span
+class="header-section-number">4</span> Fractions</h1>
+<p>Fractions can be written in two ways:</p>
+<ul>
+<li>as decimals fractions, for example <span
+class="math inline">\(0.5\)</span>, <span
+class="math inline">\(0.25\)</span> and <span
+class="math inline">\(0.\dot{3}\)</span>.</li>
+<li>as vulgar fractions, the following fractions have the same values as
+the examples above, <span class="math inline">\(\frac{1}{2}\)</span>,
+<span class="math inline">\(\frac{1}{4}\)</span> and <span
+class="math inline">\(\frac{1}{3}\)</span>. Vulgar fractions consist of
+two parts. The top, or <strong>numerator</strong>, and the bottom, the
+<strong>denominator</strong>.</li>
+</ul>
+<p>Vulgar fractions are useful in algebra. The next section looks at
+some techniques for dealing with them.</p>
+<h2 data-number="4.1" id="simplifying"><span
+class="header-section-number">4.1</span> Simplifying</h2>
+<iframe src="https://player.vimeo.com/video/837882860?h=484eb8ba11" class="vimeo-iframe"></iframe>
+<p>Fractions can be <em>cancelled down</em> or simplified by dividing
+the numerator and denominator by a common factor i.e. we look for a
+number that <em>goes into</em> both the top and the bottom of the
+fraction. For example:</p>
+<p><span class="math display">\[
+\begin{aligned} \frac{18}{24} &amp;= \frac{3 \times 6}{4 \times 6} \\
+&amp;= \frac{3 \times \cancel{6}}{4 \times \cancel{6}} \\
+&amp;= \frac{3}{4}
+\end{aligned}
+\]</span></p>
+<p>The same can be done with algebraic fractions.</p>
+<p><span class="math display">\[
+\begin{aligned} \frac{4xy}{6x} &amp;= \frac{2y \times 2x}{3 \times 2x}
+\\
+&amp;= \frac{2y \times \cancel{2x}}{3 \times \cancel{2x}} \\
+&amp;= \frac{2y}{3}
+\end{aligned}
+\]</span></p>
+<p>Sometimes you’ll need to factorise expressions in the fraction in
+order to cancel it down.</p>
+<p><span class="math display">\[
+\begin{aligned} \frac{10x^2 + 5x}{4x+2} &amp;= \frac{5x \times 2x + 5x
+\times 1}{2 \times 2x + 2 \times 1} \\
+&amp;= \frac{5x(2x+1)}{2(2x+1)} \\
+&amp;= \frac{5x\cancel{(2x+1)}}{2\cancel{(2x+1)}} \\
+&amp;= \frac{5x}{2}
+\end{aligned}
+\]</span></p>
+<p>Here are some practice questions.</p>
+<iframe src="https://numbas.mathcentre.ac.uk/question/127104/algebra-cancelling-fractions/embed/?token=17a9a4e4-a12e-4563-affd-e77faf02f68e" class="numbas-iframe"></iframe>
+<div class="callout callout-important">
+<div class="callout-header">
+<div class="callout-icon-container">
+
+</div>
+<div class="callout-title-container">
+<strong>Warning!</strong>
+</div>
+</div>
+<div class="callout-body-container">
+<p>It is tempting to want to make cancellations like this: <span
+class="math display">\[
+\begin{aligned} \frac{2x^2}{3x+7} &amp;=
+\frac{2x\cancel{x}}{3\cancel{x}+1} \\
+&amp;= \frac{2x}{3+7} \\
+&amp;= \frac{2x}{10} \\
+&amp;= \frac{x}{5}
+\end{aligned}
+\]</span> However, please don’t do it, as it’s just plain wrong! Lets
+let <span class="math inline">\(x=3\)</span> and substitute it into the
+original <span class="math inline">\(\frac{2x}{3x+7}\)</span> and into
+incorrectly simplified version <span
+class="math inline">\(\frac{x}{5}\)</span>. If the algebra is correct it
+should give the same answer.</p>
+<p>We claim: <span class="math display">\[
+\frac{2x^2}{3x+7} = \frac{x}{5}
+\]</span> but if we substitute <span class="math inline">\(x=2\)</span>
+into both sides we get: <span class="math display">\[
+\begin{aligned} \frac{2(3)^2}{3(3)+7} &amp;= \frac{(3)}{5} \\
+\frac{2 \times 9}{9+7} &amp;= \frac{3}{5} \\
+\frac{18}{16} &amp;= \frac{3}{5} \\
+\frac{9}{8} &amp;= \frac{3}{5}
+\end{aligned}
+\]</span> Which is nonsense!</p>
+</div>
+</div>
+<h2 data-number="4.2" id="multiplication-and-division-1"><span
+class="header-section-number">4.2</span> Multiplication and
+division</h2>
+<iframe src="https://player.vimeo.com/video/837883377?h=98ae0ce9f7" class="vimeo-iframe"></iframe>
+<p>Multiplication and division of fractions is, thankfully, really
+easy!</p>
+<h3 data-number="4.2.1" id="multiplication"><span
+class="header-section-number">4.2.1</span> Multiplication</h3>
+<p>For multiplication you simply multiply the different fractions
+numerators and denominators together. In other words the top of the
+first fraction with the top of the second one and so on. After the
+multiplication you may be able to cancel down the fraction. Just like
+this:</p>
+<p><span class="math display">\[
+\begin{aligned} \frac{2}{5} \times \frac{3}{4} &amp;= \frac{2 \times
+3}{5 \times 4} \\
+&amp;= \frac{6}{20} \\
+&amp;= \frac{3 \times 2}{10 \times 2} \\
+&amp;= \frac{3 \times \cancel{2}}{10 \times \cancel{2}} \\
+&amp;= \frac{3}{10}
+\end{aligned}
+\]</span></p>
+<div class="callout callout-tip">
+<div class="callout-header">
+<div class="callout-icon-container">
+
+</div>
+<div class="callout-title-container">
+<strong>Pro-tip</strong>
+</div>
+</div>
+<div class="callout-body-container">
+<p>It is possible to cancel before multiplying. Here is the same example
+revisited:</p>
+<p><span class="math display">\[
+\begin{aligned} \frac{2}{5} \times \frac{3}{4} &amp;= \frac{2 \times
+3}{5 \times 4} \\
+&amp;= \frac{2 \times 3}{5 \times 2 \times 2} \\
+&amp;= \frac{\cancel{2} \times 3}{5 \times 2 \times \cancel{2}} \\
+&amp;= \frac{3}{10}
+\end{aligned}
+\]</span></p>
+<p>This can be super useful when dealing with large numbers or complex
+algebraic fractions.</p>
+</div>
+</div>
+<h3 data-number="4.2.2" id="division"><span
+class="header-section-number">4.2.2</span> Division</h3>
+<p>We can change a division into a multiplication by remembering
+<strong>keep, change, flip</strong>. We keep the first fraction as it
+is. Change the division, <span class="math inline">\(\div\)</span>,
+symbol to a multiplication, <span class="math inline">\(\times\)</span>,
+and flip the last fraction - swap the places of the numerator and
+denominator. This is called taking the reciprocal of the fraction. For
+example:</p>
+<p><span class="math display">\[
+\begin{aligned} \frac{3}{7} \div \frac{5}{2} &amp;= \frac{3}{7} \times
+\frac{2}{5} \\
+&amp;= \frac{3 \times 2}{7 \times 5} \\
+&amp;= \frac{6}{35}
+\end{aligned}
+\]</span></p>
+<h2 data-number="4.3" id="addition-and-subtraction-1"><span
+class="header-section-number">4.3</span> Addition and subtraction</h2>
+<iframe src="https://player.vimeo.com/video/837883283?h=da683258f7" class="vimeo-iframe"></iframe>
+<p>Addition and subtraction is easy if the denominators are the same. We
+just add the numerators together and the denominators stays the same.
+For example:</p>
+<p><span class="math display">\[
+\begin{aligned} \frac{2}{5} + \frac{1}{5} &amp;= \frac{2+1}{5} \\
+&amp;= \frac{3}{5}
+\end{aligned}
+\]</span></p>
+<p>If the denominators are different we must make equivalent fractions
+with a common denominators first. Finding a common denominator is like
+simplification, or cancelling down, but in reverse.</p>
+<p>If we want to add <span class="math inline">\(\frac{2}{3}\)</span>
+and <span class="math inline">\(\frac{2}{9}\)</span> for example, we
+want to rewrite the first fraction so that it has <span
+class="math inline">\(9\)</span> as the denominator. To do this, we
+multiply the top and bottom of the fraction by <span
+class="math inline">\(3\)</span> (Remember to multiply
+<strong>both</strong> the numerator and denominator by <span
+class="math inline">\(3\)</span> to make sure the fractions are
+equivalent!) :</p>
+<p><span class="math display">\[
+\begin{aligned} \frac{2}{3} + \frac{2}{9} &amp;= \frac{2 \times 3}{3
+\times 3} + \frac{2}{9} \\
+&amp;= \frac{6}{9} + \frac{2}{9} \\
+&amp;= \frac{6 + 2}{9} \\
+&amp;= \frac{8}{9}
+\end{aligned}
+\]</span></p>
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "45c34618a8294826b85725434b26e3db"}'></script>
+<!-- End Cloudflare Web Analytics -->
+<script type="application/javascript" src="scripts/light-dark.js"></script>
+</body>
+</html>

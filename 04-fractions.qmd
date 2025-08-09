@@ -16,8 +16,6 @@ Vulgar fractions are useful in algebra. The next section looks at some technique
 
 Fractions can be *cancelled down* or simplified by dividing the numerator and denominator by a common factor i.e. we look for a number that *goes into* both the top and the bottom of the fraction. For example:
 
-![](./img/desmos.gif)
-
 $$
 \begin{aligned} \frac{18}{24} &= \frac{3 \times 6}{4 \times 6} \\
 &= \frac{3 \times \cancel{6}}{4 \times \cancel{6}} \\

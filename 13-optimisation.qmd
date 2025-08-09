@@ -97,7 +97,7 @@ Have a go at this quesiton on classifying critical points.
     style="max-height: 600px;"
 >}}
 
-## Solving optomisation problems.
+## Solving optimisation problems.
 
 We can put all this together to solve problems. **Warning** This is a long question with many steps. You might want to check your knowledge of the chain and quotient rule before you start.
 

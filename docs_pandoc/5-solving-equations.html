@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Ed Southwood" />
+  <title>Solving equations</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="./../src/css/base.css" />
+  <link rel="stylesheet" href="./../src/css/callout.css" />
+  <link rel="stylesheet" href="./../src/css/spss_light.css" />
+  <link rel="stylesheet" href="./../src/css/screen.css" />
+  <link rel="stylesheet" href="./../src/css/print.css" />
+  <link rel="stylesheet" href="zerotohero.css" />
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: {extensions: ["cancel.js"]},
+        tex2jax: {
+          inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+          processEscapes: true
+        }
+      });
+  </script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="index.html" accesskey="u" rel="up">Zero to Hero</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Zero to Hero</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="6-reading-mathematics.html" accesskey="n" rel="next">Reading mathematics</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="4-fractions.html" accesskey="p" rel="previous">Fractions</a>
+</span>
+</div>
+</nav>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="-welcome.html#welcome" id="toc-welcome">Welcome</a></li>
+<li><a href="1-negative-numbers.html#negative-numbers"
+id="toc-negative-numbers"><span class="toc-section-number">1</span>
+Negative numbers</a>
+<ul>
+<li><a href="1-negative-numbers.html#multiplication-and-division"
+id="toc-multiplication-and-division"><span
+class="toc-section-number">1.1</span> Multiplication and
+Division</a></li>
+<li><a href="1-negative-numbers.html#addition-and-subtraction"
+id="toc-addition-and-subtraction"><span
+class="toc-section-number">1.2</span> Addition and subtraction</a></li>
+</ul></li>
+<li><a href="2-algebraic-expressions.html#algebraic-expressions"
+id="toc-algebraic-expressions"><span class="toc-section-number">2</span>
+Algebraic expressions</a>
+<ul>
+<li><a href="2-algebraic-expressions.html#substitution"
+id="toc-substitution"><span class="toc-section-number">2.1</span>
+Substitution</a></li>
+<li><a href="2-algebraic-expressions.html#simplification"
+id="toc-simplification"><span class="toc-section-number">2.2</span>
+Simplification</a></li>
+</ul></li>
+<li><a href="3-expressions-with-brackets.html#expressions-with-brackets"
+id="toc-expressions-with-brackets"><span
+class="toc-section-number">3</span> Expressions with brackets</a>
+<ul>
+<li><a href="3-expressions-with-brackets.html#expanding"
+id="toc-expanding"><span class="toc-section-number">3.1</span>
+Expanding</a></li>
+<li><a href="3-expressions-with-brackets.html#factorising"
+id="toc-factorising"><span class="toc-section-number">3.2</span>
+Factorising</a></li>
+</ul></li>
+<li><a href="4-fractions.html#fractions" id="toc-fractions"><span
+class="toc-section-number">4</span> Fractions</a>
+<ul>
+<li><a href="4-fractions.html#simplifying" id="toc-simplifying"><span
+class="toc-section-number">4.1</span> Simplifying</a></li>
+<li><a href="4-fractions.html#multiplication-and-division-1"
+id="toc-multiplication-and-division-1"><span
+class="toc-section-number">4.2</span> Multiplication and
+division</a></li>
+<li><a href="4-fractions.html#addition-and-subtraction-1"
+id="toc-addition-and-subtraction-1"><span
+class="toc-section-number">4.3</span> Addition and subtraction</a></li>
+</ul></li>
+<li><a href="5-solving-equations.html#solving-equations"
+id="toc-solving-equations"><span class="toc-section-number">5</span>
+Solving equations</a>
+<ul>
+<li><a href="5-solving-equations.html#linear-equations"
+id="toc-linear-equations"><span class="toc-section-number">5.1</span>
+Linear equations</a></li>
+<li><a href="5-solving-equations.html#inequalities"
+id="toc-inequalities"><span class="toc-section-number">5.2</span>
+Inequalities</a></li>
+<li><a href="5-solving-equations.html#simultaneous-equations"
+id="toc-simultaneous-equations"><span
+class="toc-section-number">5.3</span> Simultaneous equations</a></li>
+</ul></li>
+<li><a href="6-reading-mathematics.html#reading-mathematics"
+id="toc-reading-mathematics"><span class="toc-section-number">6</span>
+Reading mathematics</a>
+<ul>
+<li><a href="6-reading-mathematics.html#common-symbols"
+id="toc-common-symbols"><span class="toc-section-number">6.1</span>
+Common symbols</a></li>
+<li><a href="6-reading-mathematics.html#sets" id="toc-sets"><span
+class="toc-section-number">6.2</span> Sets</a></li>
+</ul></li>
+<li><a href="7-straight-line-graphs.html#straight-line-graphs"
+id="toc-straight-line-graphs"><span class="toc-section-number">7</span>
+Straight line graphs</a>
+<ul>
+<li><a href="7-straight-line-graphs.html#coordinates"
+id="toc-coordinates"><span class="toc-section-number">7.1</span>
+Coordinates</a></li>
+<li><a
+href="7-straight-line-graphs.html#the-formula-for-a-straight-line-graph-ymxc"
+id="toc-the-formula-for-a-straight-line-graph-ymxc"><span
+class="toc-section-number">7.2</span> The formula for a straight line
+graph: <span class="math inline">\(y=mx+c\)</span></a></li>
+</ul></li>
+<li><a href="8-quadratics.html#quadratics" id="toc-quadratics"><span
+class="toc-section-number">8</span> Quadratics</a>
+<ul>
+<li><a href="8-quadratics.html#expanding-pairs-of-brackets-1"
+id="toc-expanding-pairs-of-brackets-1"><span
+class="toc-section-number">8.1</span> Expanding pairs of
+brackets</a></li>
+<li><a href="8-quadratics.html#factorising-pairs-of-brackets"
+id="toc-factorising-pairs-of-brackets"><span
+class="toc-section-number">8.2</span> Factorising pairs of
+brackets</a></li>
+<li><a href="8-quadratics.html#solving-quadratics"
+id="toc-solving-quadratics"><span class="toc-section-number">8.3</span>
+Solving Quadratics</a></li>
+<li><a href="8-quadratics.html#simultaneous-equations-1"
+id="toc-simultaneous-equations-1"><span
+class="toc-section-number">8.4</span> Simultaneous equations</a></li>
+</ul></li>
+<li><a href="9-indices.html#indices" id="toc-indices"><span
+class="toc-section-number">9</span> Indices</a>
+<ul>
+<li><a href="9-indices.html#index-notation"
+id="toc-index-notation"><span class="toc-section-number">9.1</span>
+Index notation</a></li>
+<li><a href="9-indices.html#rules-of-indices"
+id="toc-rules-of-indices"><span class="toc-section-number">9.2</span>
+Rules of indices</a></li>
+</ul></li>
+<li><a href="10-differentiation.html#differentiation"
+id="toc-differentiation"><span class="toc-section-number">10</span>
+Differentiation</a>
+<ul>
+<li><a href="10-differentiation.html#the-tangent-to-a-curve"
+id="toc-the-tangent-to-a-curve"><span
+class="toc-section-number">10.1</span> The tangent to a curve</a></li>
+<li><a href="10-differentiation.html#the-rules-of-differentiation"
+id="toc-the-rules-of-differentiation"><span
+class="toc-section-number">10.2</span> The rules of
+differentiation</a></li>
+<li><a href="10-differentiation.html#finding-gradient-at-a-point"
+id="toc-finding-gradient-at-a-point"><span
+class="toc-section-number">10.3</span> Finding gradient at a
+point</a></li>
+</ul></li>
+<li><a href="11-exponential-functions.html#exponential-functions"
+id="toc-exponential-functions"><span
+class="toc-section-number">11</span> Exponential functions</a>
+<ul>
+<li><a
+href="11-exponential-functions.html#getting-to-know-exponential-functions"
+id="toc-getting-to-know-exponential-functions"><span
+class="toc-section-number">11.1</span> Getting to know exponential
+functions</a></li>
+<li><a href="11-exponential-functions.html#the-exponential-function"
+id="toc-the-exponential-function"><span
+class="toc-section-number">11.2</span> The exponential function</a></li>
+<li><a href="11-exponential-functions.html#differentiating-ex"
+id="toc-differentiating-ex"><span class="toc-section-number">11.3</span>
+Differentiating <span class="math inline">\(e^x\)</span></a></li>
+</ul></li>
+<li><a href="12-logarithms.html#logarithms" id="toc-logarithms"><span
+class="toc-section-number">12</span> Logarithms</a>
+<ul>
+<li><a href="12-logarithms.html#reverse-of-indices"
+id="toc-reverse-of-indices"><span class="toc-section-number">12.1</span>
+Reverse of indices</a></li>
+<li><a href="12-logarithms.html#rules-of-logarithms"
+id="toc-rules-of-logarithms"><span
+class="toc-section-number">12.2</span> Rules of logarithms</a></li>
+<li><a href="12-logarithms.html#solving-equations-with-logarithms-in"
+id="toc-solving-equations-with-logarithms-in"><span
+class="toc-section-number">12.3</span> Solving equations with logarithms
+in</a></li>
+<li><a href="12-logarithms.html#some-important-bases"
+id="toc-some-important-bases"><span
+class="toc-section-number">12.4</span> Some important bases</a></li>
+<li><a href="12-logarithms.html#differentiating-lnx"
+id="toc-differentiating-lnx"><span
+class="toc-section-number">12.5</span> Differentiating <span
+class="math inline">\(\ln{x}\)</span></a></li>
+</ul></li>
+<li><a href="13-further-differentiation.html#further-differentiation"
+id="toc-further-differentiation"><span
+class="toc-section-number">13</span> Further differentiation</a>
+<ul>
+<li><a href="13-further-differentiation.html#standard-results"
+id="toc-standard-results"><span class="toc-section-number">13.1</span>
+Standard results</a></li>
+<li><a href="13-further-differentiation.html#the-chain-rule"
+id="toc-the-chain-rule"><span class="toc-section-number">13.2</span> The
+chain rule</a></li>
+<li><a href="13-further-differentiation.html#the-product-rule"
+id="toc-the-product-rule"><span class="toc-section-number">13.3</span>
+The product rule</a></li>
+<li><a href="13-further-differentiation.html#the-quotient-rule"
+id="toc-the-quotient-rule"><span class="toc-section-number">13.4</span>
+The quotient rule</a></li>
+</ul></li>
+<li><a href="14-optimisation.html#optimisation"
+id="toc-optimisation"><span class="toc-section-number">14</span>
+Optimisation</a>
+<ul>
+<li><a href="14-optimisation.html#the-process-of-optimisation"
+id="toc-the-process-of-optimisation"><span
+class="toc-section-number">14.1</span> The process of
+optimisation</a></li>
+<li><a
+href="14-optimisation.html#classifying-turning-points---critical-points"
+id="toc-classifying-turning-points---critical-points"><span
+class="toc-section-number">14.2</span> Classifying turning points -
+critical points</a></li>
+<li><a
+href="14-optimisation.html#example---finding-and-classifying-critical-points"
+id="toc-example---finding-and-classifying-critical-points"><span
+class="toc-section-number">14.3</span> Example - finding and classifying
+critical points</a></li>
+<li><a href="14-optimisation.html#solving-optomisation-problems."
+id="toc-solving-optomisation-problems."><span
+class="toc-section-number">14.4</span> Solving optomisation
+problems.</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 data-number="5" id="solving-equations"><span
+class="header-section-number">5</span> Solving equations</h1>
+<p>When we work out the value of an unknown, say <span
+class="math inline">\(x\)</span>, in an equation we say that we <em>are
+solving for <span class="math inline">\(x\)</span></em>. To work out the
+value we are free to apply any mathematical operation we like to the
+equation so long as we <em>do the same to both sides</em>.</p>
+<p>Note: We can’t quite do any operation. Division by zero, <span
+class="math inline">\(\div 0\)</span>, is not allowed as it is
+undefined.</p>
+<h2 data-number="5.1" id="linear-equations"><span
+class="header-section-number">5.1</span> Linear equations</h2>
+<iframe src="https://player.vimeo.com/video/837883462?h=13912bc0c2" class="vimeo-iframe"></iframe>
+<h3 data-number="5.1.1" id="single-unknown"><span
+class="header-section-number">5.1.1</span> Single unknown</h3>
+<p>Keeping the idea of doing the same thing to both sides in mind lets
+solve the following equation by <em>undoing</em> each operation with
+it’s inverse.</p>
+<p><span class="math display">\[
+3x + 8 = 10
+\]</span> First subtract <span class="math inline">\(8\)</span> from
+each side.</p>
+<p><span class="math display">\[
+\begin{aligned} 3x+8 -8 &amp;= 10 -8 \\
+3x &amp;= 2
+\end{aligned}
+\]</span></p>
+<p>Now divide both sides by <span class="math inline">\(3\)</span> to
+find the value of one <span class="math inline">\(x\)</span>.</p>
+<p><span class="math display">\[
+\begin{aligned} \frac{3x}{3} &amp;= \frac{2}{3} \\
+x &amp;= \frac{2}{3}
+\end{aligned}
+\]</span></p>
+<p>The nice thing here is that we can leave the answer as <span
+class="math inline">\(\frac{2}{3}\)</span>. No need to find a decimal
+fraction if we don’t need to.</p>
+<p>Solve the following equations by applying the same operation to both
+sides. Remember the questions come with full solutions, so, if you get
+stuck have a look at the answers and then try a different one.</p>
+<iframe src="https://numbas.mathcentre.ac.uk/question/90637/equations-linear-equations-1a-rational-answers/embed/?token=8b0eebe4-9011-49a1-a3aa-d0a1298634be" class="numbas-iframe"></iframe>
+<h3 data-number="5.1.2" id="unknown-on-both-sides"><span
+class="header-section-number">5.1.2</span> Unknown on both sides</h3>
+<p>If the unknown appears twice in an equation collect the unknown like
+terms first and then solve as before.</p>
+<p>Given <span class="math inline">\(\frac{4y}{y-9}=-2\)</span>, we can
+multiply both sides by <span class="math inline">\((y-9)\)</span> to get
+rid of the fraction, then get all the <span
+class="math inline">\(y\)</span>s on one side, then finally solve as
+before.</p>
+<p><span class="math display">\[
+\begin{aligned} \frac{4y}{y-9} &amp;= -2 \\
+\frac{4y}{y-9} \times (y-9) &amp;= -2 \times (y-9) \\
+\frac{4y}{\cancel{y-9}} \times \cancel{(y-9)} &amp;= -2 \times y -2
+\times -9 \\
+4y &amp;= -2y + 18 \\
+4y + 2y &amp;= -2y + 18 +2y\\
+6y &amp;= 18\\
+\frac{6y}{6} &amp;= \frac{18}{6}\\
+y &amp;= 3
+\end{aligned}
+\]</span></p>
+<div class="callout callout-note">
+<div class="callout-header">
+<div class="callout-icon-container">
+
+</div>
+<div class="callout-title-container">
+<strong>Note</strong>
+</div>
+</div>
+<div class="callout-body-container">
+<ul>
+<li>To solve equations do the same thing to both sides.</li>
+<li>If the unknown appears twice - collect like terms first.</li>
+</ul>
+</div>
+</div>
+<p>Have a go at some questions. You’ll need a pen and paper to work
+these out.</p>
+<iframe src="https://numbas.mathcentre.ac.uk/question/104234/equations-linear-equations-2-unknowns-on-both-sides/embed/?token=c65c1027-db21-4273-bc3c-7e1a348e8510" class="numbas-iframe"></iframe>
+<h2 data-number="5.2" id="inequalities"><span
+class="header-section-number">5.2</span> Inequalities</h2>
+<iframe src="https://player.vimeo.com/video/837883408?h=73c598938f" class="vimeo-iframe"></iframe>
+<p>Solving inequalities works just like solving a normal equation except
+when you divide or multiply by a negative number the inequality symbol
+changes direction. Here are some examples.</p>
+<p>Addition and subtraction work.</p>
+<p><span class="math display">\[
+\begin{aligned} 1 &amp;&lt; 2 \\
+1 + 5 &amp;&lt; 2 + 5\\
+6 &amp;&lt; 7\\
+&amp;\checkmark&amp;\\
+\end{aligned}
+\]</span> <span class="math display">\[
+\begin{aligned} 1 &amp;&lt; 2 \\
+1 -4 &amp;&lt; 2 -4\\
+-3 &amp;&lt; -2\\
+&amp;\checkmark
+\end{aligned}
+\]</span></p>
+<p>Remember <span class="math inline">\(-3\)</span> is less than <span
+class="math inline">\(-2\)</span> since it is further to the left on a
+number line. In other words <span class="math inline">\(-3\)</span> is
+more negative than <span class="math inline">\(-2\)</span>.</p>
+<p>Multiplication and division work as expected with positive
+numbers.</p>
+<p><span class="math display">\[
+\begin{aligned} 4 &amp;&lt; 6 \\
+4 \times 2 &amp;&lt; 6 \times 2\\
+8 &amp;&lt; 12\\
+&amp;\checkmark
+\end{aligned}
+\]</span> <span class="math display">\[
+\begin{aligned} 4 &amp;&lt; 6 \\
+4 \div 2 &amp;&lt; 6 \div 2\\
+2 &amp;&lt; 3\\
+&amp;\checkmark
+\end{aligned}
+\]</span></p>
+<p>We need to be careful when multiplying and dividing by negative
+numbers.</p>
+<p><span class="math display">\[
+\begin{aligned} 4 &amp;&lt; 6 \\
+4 \times -2 &amp;&lt; 6 \times -2\\
+-8 &amp;\nless -12\\
+-8 &amp;&gt; -12
+\end{aligned}
+\]</span></p>
+<div class="callout callout-note">
+<div class="callout-header">
+<div class="callout-icon-container">
+
+</div>
+<div class="callout-title-container">
+<strong>Note</strong>
+</div>
+</div>
+<div class="callout-body-container">
+<p>Remember the following key point when using inequalities:</p>
+<p>When multiplying or dividing by a negative number change the
+direction of the inequality.</p>
+</div>
+</div>
+<h2 data-number="5.3" id="simultaneous-equations"><span
+class="header-section-number">5.3</span> Simultaneous equations</h2>
+<p>Sometimes equations have more than one unknown. Take <span
+class="math inline">\(x + y = 4\)</span> for example. There are
+infinitely many pairs of numbers, <span class="math inline">\(x\)</span>
+and <span class="math inline">\(y\)</span>, that work for this. Take the
+following pairs for example: <span class="math inline">\(x = 1\)</span>
+and <span class="math inline">\(y=3\)</span>, <span
+class="math inline">\(x = -100\)</span> and <span
+class="math inline">\(y=104\)</span>, and <span class="math inline">\(x
+= 0.1\)</span> and <span class="math inline">\(y=3.9\)</span>.</p>
+<div class="callout callout-tip">
+<div class="callout-header">
+<div class="callout-icon-container">
+
+</div>
+<div class="callout-title-container">
+<strong>Pro-tip</strong>
+</div>
+</div>
+<div class="callout-body-container">
+<p>These pairs of solutions are often given as co-ordinate pairs like
+<span class="math inline">\((1,3)\)</span>, <span
+class="math inline">\((-100,104)\)</span> and <span
+class="math inline">\((0.1,3.9)\)</span>. We’ll do more about
+co-ordinates later.</p>
+</div>
+</div>
+<p>However, if I give you some more information, say <span
+class="math inline">\(x = y\)</span>, now there is only one solution,
+namely <span class="math inline">\(x = 2\)</span> and <span
+class="math inline">\(y=2\)</span>. We can use the information in two
+equations together to find the values that satisfy both equations.</p>
+<h3 data-number="5.3.1" id="elimination-method"><span
+class="header-section-number">5.3.1</span> Elimination method</h3>
+<iframe src="https://player.vimeo.com/video/837883311?h=4e437efa2f" class="vimeo-iframe"></iframe>
+<p>The idea with this method is to combine the two equations to create a
+new equation with only one variable in it.</p>
+<p><span class="math display">\[
+\begin{aligned}
+4x + 2y &amp;= -6 &amp;(1)\\
+-2x + 3y &amp;= 7 &amp;(2)
+\end{aligned}
+\]</span></p>
+<p>To get a solution for <span class="math inline">\(y\)</span>, if we
+multiply equation <span class="math inline">\((2)\)</span> by <span
+class="math inline">\(2\)</span> we will have two equations with equal
+and opposite x-coefficients:</p>
+<p><span class="math display">\[
+\begin{aligned}
+4x + 2y &amp;= -6   \\
+-4x + 6y &amp;= 14 &amp;(3)
+\end{aligned}
+\]</span></p>
+<p>If we add equation <span class="math inline">\((1)\)</span> to
+equation <span class="math inline">\((3)\)</span> this eliminates the
+<span class="math inline">\(x\)</span>-terms, leaving us with one
+equation in terms of <span class="math inline">\(y\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+(2+6)y &amp;= -6 + 14   \\
+8y &amp;= 8 \\
+y &amp;= 1
+\end{aligned}
+\]</span></p>
+<p>To obtain a solution for <span class="math inline">\(x\)</span> we
+can substitute this <span class="math inline">\(y\)</span>-value into
+either of our initial equations. Using equation <span
+class="math inline">\((1)\)</span>, we obtain:</p>
+<p><span class="math display">\[
+\begin{aligned}
+4x + 2 \times 1 &amp;= -6 \\
+4x + 2 &amp;= -6 \\
+4x &amp;= -8 \\
+x &amp;= -2
+\end{aligned}
+\]</span></p>
+<p>We can check our values for <span class="math inline">\(x\)</span>
+and <span class="math inline">\(y\)</span> by substituting them into
+equation <span class="math inline">\(2\)</span>.</p>
+<p><span class="math display">\[
+\begin{aligned}
+-2x + 3y &amp;= 7 \\
+-2 \times -2 + 3 \times 1 &amp;= 7 \\
+4 + 3 &amp;= 7
+\end{aligned}
+\]</span></p>
+<p>Which works out!</p>
+<p>You can try other examples in the exercise below. Sometime you may
+have to multiply both of your starting equations in order to get the
+same amount of one variable. Also, don’t worry if you have eliminated
+the other variable - it doesn’t matter which you get rid of first, you
+should get the same answer in the end.</p>
+<iframe src="https://numbas.mathcentre.ac.uk/question/104646/simultaneous-equations-linear-equations-with-integer-solutions/embed/?token=22ea59f8-3c89-478a-acd8-d114edcba808" class="numbas-iframe"></iframe>
+<h3 data-number="5.3.2" id="substitution-method"><span
+class="header-section-number">5.3.2</span> Substitution method</h3>
+<p>It is also possible to re-arrange one equation and substitute it into
+the other. This method will be covered in the <a
+href="8-quadratics.html#quadratics">Quadratics</a> section.</p>
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "45c34618a8294826b85725434b26e3db"}'></script>
+<!-- End Cloudflare Web Analytics -->
+<script type="application/javascript" src="scripts/light-dark.js"></script>
+</body>
+</html>
