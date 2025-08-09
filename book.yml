@@ -1,0 +1,10 @@
+toc: true
+toc-depth: 2
+number-sections: true
+split-level: 1
+
+metadata:
+  author: "Ed Southwood"
+  cc-logo: ../img/cc-logo.png
+  logo-light: ../img/uob-logo.light.png
+  logo-dark: ../img/uob-logo.dark.png
