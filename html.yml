@@ -1,3 +1,4 @@
 to: chunkedhtml
+css: ./../zerotohero.css
 template: template.html
 include-in-header: preamble.html
