@@ -1,4 +1,4 @@
-output-file: docs_pandoc
+output-file: docs
 metadata:
   title: "Zero to Hero"
   profile: all
