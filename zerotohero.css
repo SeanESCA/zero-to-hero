@@ -1,33 +1,3 @@
-#sitenav {
-    display:flex;
-    height: 5.5em;
-    > div {
-        margin: 0;
-        width:100%
-    }
-    > div:nth-child(2) {
-        display:flex;
-        flex-direction: column;
-        img {
-            margin: 0;
-            margin-left: auto;
-            width: fit-content;
-        }
-/*         flex-direction: row;
-        justify-content: flex-end;
-        div:nth-child(1) {
-            margin: 0;
-        }
-        div:nth-child(2) {
-            margin: 0;
-            min-width: 11em;
-            img {
-                width: 100%;
-            }
-        } */
-    }
-}
-
 .vimeo-iframe {
     max-width: 672px;
     max-height:405px; 
