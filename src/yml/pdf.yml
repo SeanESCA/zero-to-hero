@@ -1,0 +1,10 @@
+include-in-header: ./src/tex/header.tex
+metadata:
+  documentclass: scrbook
+  papersize: a4
+  colorlinks: true
+  linkcolor: SteelBlue3
+  citecolor: SteelBlue3
+  urlcolor: SteelBlue3
+  geometry: 
+  - margin=2cm

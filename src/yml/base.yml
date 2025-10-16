@@ -1,0 +1,27 @@
+standalone: true
+from: markdown
+metadata-file: ./src/yml/metadata.yml
+citeproc: true
+reference-doc: ./src/template/reference.docx
+
+filters:
+- ./src/lua/div.lua
+- ./src/lua/brailler.lua
+- ./src/lua/callout.lua 
+- ./src/lua/collapse.lua
+- ./src/lua/table.lua
+- ./src/lua/header.lua
+- ./src/lua/link.lua
+- ./src/lua/image.lua
+- ./src/lua/shortcode.lua
+  
+css:
+- ./src/css/base.css 
+- ./src/css/callout.css 
+- ./src/css/spss_light.css
+- ./src/css/screen.css
+- ./src/css/print.css
+  
+html-math-method:
+  method: mathjax
+  url: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full

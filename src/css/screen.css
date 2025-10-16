@@ -1,0 +1,31 @@
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 12pt;
+    padding: 0 5%;
+  }
+  
+  div:has(table):not(.callout, .callout-body-container) {
+    padding-right: 5.6%
+  }
+
+  #sitenav {
+    width:87%;
+    padding-bottom: .75em;
+    .sitenav {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: .25em;
+      gap: .25em;
+      .navlink {
+        width: 100%;
+      }
+    }
+  }
+
+  #sitenav {
+    width: 88%;
+  }
+  #sitenav + * {
+    margin-top: 3.5em;
+  }
+}

@@ -1,0 +1,107 @@
+body {
+  font: 14pt sans-serif;
+  padding: 0 12.5%;
+}
+
+caption, details, div, p, table, iframe {
+  margin: 0.5em auto;
+}
+
+li {
+  p, ol, ul {
+    margin: 0.3em 0; 
+  }
+}
+
+p {
+	text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6, header {
+	border-bottom: 1px gray solid;
+	padding-bottom: 0.25em;
+  margin: 0.5em 0;
+}
+
+header {
+  * {
+    margin-bottom: 0;
+  }
+  h1 {
+    border-bottom-width: 0;
+  }
+}
+
+pre {
+  padding: 0 .75em;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 1.5px black solid;
+	padding: .4em .8em;
+  min-width: 2.5em;
+}
+
+thead {
+  border-bottom: 3px solid black;
+}
+
+:not(.math.inline) > img:not(.math) {
+  display: block;
+  max-width: 100%;
+  margin: 0.5em auto;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+figcaption {
+  text-align: center;
+}
+
+iframe {
+  display: block;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+div:has(table):not(.callout, .callout-body-container) {
+  width: fit-content;
+  min-width: 100%;
+  padding-right: 16.7%;
+}
+
+/* Navigation bar in chunked html. */
+
+#sitenav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: solid gray 1px;
+  z-index: 100;
+  
+  .navlink {
+    width: 50%;
+    padding-right: 1em;
+    display: inline-flex;
+    overflow: hidden;
+    white-space: nowrap;
+    .navlink-label {
+      min-width: 4.25em;
+    }
+    a {
+      display: inline-block;
+      padding: 0 .5em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

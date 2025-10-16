@@ -1,0 +1,10 @@
+link-citations: true
+shortcode:
+  msg:
+    desmos: "You can click here to access the Desmos graph online."
+    video: "You can click here to access the video online."
+    vimeo: "You can click here to access the video online."
+    numbas: "You can click here to access the Numbas questions online."
+  # include-after-html:
+  #   desmos: |
+  #     The graphs and diagrams created in [Desmos](https://www.desmos.com/calculator) are interactive. You can click on the *edit graph on desmos* button to open the graph in a new tab.

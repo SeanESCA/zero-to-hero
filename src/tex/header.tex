@@ -1,0 +1,79 @@
+% Remove prefix from captions.
+\usepackage[labelformat=empty]{caption}
+
+% Packages for callouts.
+\usepackage{xcolor}
+\usepackage[breakable]{tcolorbox}
+
+% Colours for callouts.
+\definecolor{callout-blue}{RGB}{0, 84, 253}
+\definecolor{callout-lightblue}{RGB}{123, 194, 255}
+\definecolor{callout-purple}{RGB}{165, 3, 252}
+\definecolor{callout-lightpurple}{RGB}{237, 210, 252}
+\definecolor{callout-green}{RGB}{0, 153, 0}
+\definecolor{callout-lightgreen}{RGB}{190, 255, 190}
+\definecolor{callout-gold}{RGB}{232, 197, 2}
+\definecolor{callout-lightgold}{RGB}{255, 251, 201}
+\definecolor{callout-darkred}{RGB}{149, 0, 0}
+\definecolor{callout-lightred}{RGB}{255, 140, 140}
+\definecolor{callout-darkorange}{RGB}{202, 128, 0}
+\definecolor{callout-lightorange}{RGB}{255, 202, 128}
+
+% General callout structure.
+\newtcolorbox{callout}[3][Callout]{
+    title={#1}, 
+    colframe={#2},
+    colbacktitle={#3},
+    colback=white,
+    coltitle=black,
+    boxrule=0.2mm,
+    titlerule=0mm,
+    leftrule=1mm,
+    fonttitle=\bfseries,
+    left=2mm,
+    right=2mm,
+    toptitle=1mm,
+    bottomtitle=1mm,
+    breakable
+}
+
+% Specify individual callouts based on general callout structure.
+\newenvironment{callout-note}[1][Note]{
+    \begin{callout}[#1]{callout-blue}{callout-lightblue}
+}{\end{callout}}
+
+\newenvironment{callout-eye}[1][Accessibility]{
+    \begin{callout}[#1]{callout-blue}{callout-lightblue}
+}{\end{callout}}
+
+\newenvironment{callout-important}[1][Important]{
+    \begin{callout}[#1]{callout-purple}{callout-lightpurple}
+}{\end{callout}}
+
+\newenvironment{callout-attention}[1][Attention]{
+    \begin{callout}[#1]{callout-purple}{callout-lightpurple}
+}{\end{callout}}
+
+\newenvironment{callout-question}[1][Question]{
+    \begin{callout}[#1]{callout-purple}{callout-lightpurple}
+}{\end{callout}}
+
+\newenvironment{callout-tip}[1][Tip]{
+    \begin{callout}[#1]{callout-green}{callout-lightgreen}
+}{\end{callout}}
+
+\newenvironment{callout-exercise}[1][Exercise]{
+    \begin{callout}[#1]{callout-green}{callout-lightgreen}
+}{\end{callout}}
+
+\newenvironment{callout-answer}[1][Answer]{
+    \begin{callout}[#1]{callout-gold}{callout-lightgold}
+}{\end{callout}}
+
+\newenvironment{callout-warning}[1][Warning]{
+    \begin{callout}[#1]{callout-darkred}{callout-lightred}
+}{\end{callout}}
+
+\newenvironment{callout-caution}[1][Caution]{
+    \begin{callout}[#1]{callout-darkorange}{callout-lightorange}
+}{\end{callout}}

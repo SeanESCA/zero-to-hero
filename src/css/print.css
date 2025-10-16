@@ -1,0 +1,18 @@
+@media print {
+    body {
+        font-size: 12pt;
+        padding: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust:exact !important;
+    }
+
+    h1,h2,h3,h4,h5,h6,caption,tr,thead,table {
+        break-inside: avoid-page;
+        break-after: avoid-page;
+    }
+}
+
+@page {
+    size: a4;
+    margin: 2.54cm;
+}

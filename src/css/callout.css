@@ -1,0 +1,180 @@
+/* Styling for all callouts. */
+.callout {
+  border-style: solid;
+  border-width: 1px 1px 1px 5px;
+  border-radius: 5px;
+  font-size: .98em;
+  min-width: calc(100% - 5px);
+  width: fit-content;
+  box-sizing: border-box;
+
+  > .callout-header {
+    display: flex;
+    margin: 0;
+    height: 1.75em;
+    border-top-right-radius: 5px;
+    background-color: #ccc;
+    
+    > .callout-icon-container {
+      font-weight: bold;
+      margin: 0;
+      width: 1.75em;
+      text-align: center;
+
+    }
+
+    > .callout-icon-container::after {
+      content: "\00270E\00FE0E";
+    }
+
+    > .callout-title-container {
+      align-content: center;
+      margin: 0;
+    }
+  }
+  
+  .callout-body-container {
+    padding: 0 .5em;
+    p {
+      line-height: 1.25em;
+    }
+  }
+}
+
+/* Styling for collapsible callouts. */
+details.callout:hover {
+  box-shadow: 0 0 2px 2px grey;
+}
+
+details[open].callout {
+  box-shadow: 0 0 0 0;
+}
+
+
+summary::after {
+  margin-left: auto;
+  padding: .25rem .5rem;
+  content: ' +';
+}
+
+details[open] summary:after {
+  content: " -";
+}
+
+/* Styling for specific callouts. */
+.callout-attention, .callout-important {
+  border-color: #a503fc;
+  > .callout-header {
+    background-color: #edd2fc;
+
+    > .callout-icon-container::after {
+      content: "!";
+      color: #a503fc;
+      line-height: 1.75em;
+    }
+  }
+}
+
+.callout-eye {
+  border-color: #0054fd;
+  > .callout-header {
+    background-color: #7bc2ff;
+
+    > .callout-icon-container::after {
+      color: #0054fd;
+      content: "\01F441\00FE0E";
+      line-height: 1.5rem;
+    }
+
+    > .callout-title-container {
+      margin: .25rem 0;
+    }
+  }
+}
+
+.callout-note {
+  border-color: #0054fd;
+  > .callout-header {
+    background-color: #7bc2ff;
+
+    > .callout-icon-container::after {
+      color: #0054fd;
+      content: "\0024D8\00FE0E";
+      line-height: 1.5rem;
+    }
+
+    > .callout-title-container {
+      margin: .25rem 0;
+    }
+  }
+}
+
+.callout-question {
+  border-color: #a503fc;
+  > .callout-header {
+    background-color: #edd2fc;
+
+    > .callout-icon-container::after {
+      content: "?";
+      color: #a503fc;
+      line-height: 1.75em;
+    }
+  }
+}
+
+.callout-tip {
+  border-color: #009900;
+  > .callout-header {
+    background-color: #beffbe;
+    > .callout-icon-container::after {
+      color: #009900;
+      content: "\01F4A1\00FE0E";
+    }
+  }
+}
+
+.callout-answer {
+  border-color: #ffc000;
+  > .callout-header {
+    background-color: #fffbc9;
+    > .callout-icon-container::after {
+      color: #e8c502;
+      content: "\0024B6\00FE0E";
+      line-height: 1.75em;
+    }
+  }
+}
+
+.callout-exercise {
+  border-color: #009900;
+  > .callout-header {
+    background-color: #beffbe;
+    > .callout-icon-container::after {
+      color: #009900;
+      content: "\01F56E\00FE0E";
+      line-height: 1.75em;
+    }
+  }
+}
+
+.callout-warning {
+  border-color: #950000;
+  > .callout-header {
+    background-color: #ff8c8c;
+    > .callout-icon-container::after {
+      color: #950000;
+      content: "\0026A0\00FE0E";
+    }
+  }
+}
+
+.callout-caution {
+  border-color: #ca8000;
+  > .callout-header {
+    background-color: #ffca80;
+    > .callout-icon-container::after {
+      color: #ca8000;
+      content: "\01F6A7\00FE0E";
+    }
+  }
+}

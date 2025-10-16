@@ -1,0 +1,71 @@
+:root {
+  --color: black;
+  --font-family: Sans-Serif;
+  --header-color: rgb(62, 93, 113);
+  --inner-border-color: rgb(187, 187, 187);
+  --row-header-bg-color: rgb(224, 224, 224);
+}
+
+.output {
+  color: var(--color);
+  font-family: var(--font-family);
+  margin: auto;
+
+  .output-content {
+    min-width: 0;
+    margin: auto;
+    padding: 0;
+  }
+  
+  .output-note {
+    font-size: 0.9rem;
+    width: auto;
+    * {
+      margin: 0;
+    }
+    ol {
+      padding-left: 0;
+      list-style-position: inside;
+      
+      p{
+        display: inline;
+      }
+    }
+  }
+  
+  table, td, th {
+    border-style: none;
+    width: auto !important;
+  }
+  
+  td, th {
+    border: var(--inner-border-color) solid 1.5px;
+  }
+  
+  thead tr {
+      border-bottom-style: none;
+  }
+  
+  th {
+    color: var(--header-color);
+    font-weight: normal;
+  }
+  
+  tbody th {
+    background-color: var(--row-header-bg-color);
+    text-align: left !important;
+  }
+    
+  tr:last-child {
+    border-bottom: var(--color) 2px solid;
+  }
+  
+  math, .math * {
+    font-family: var(--font-family) !important;
+    font-size: inherit !important;
+  }
+  
+  caption {
+    font-weight: 1000;
+  }
+}
